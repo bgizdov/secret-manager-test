@@ -1,0 +1,162 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< org.acme:code-with-quarkus >---------------------
+[INFO] Building code-with-quarkus 1.0.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- quarkus-maven-plugin:1.13.6.Final:generate-code (default) @ code-with-quarkus ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ code-with-quarkus ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ code-with-quarkus ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- quarkus-maven-plugin:1.13.6.Final:dev (default-cli) @ code-with-quarkus ---
+Listening for transport dt_socket at address: 5005
+Jun 07, 2021 11:28:51 AM org.hibernate.jpa.internal.util.LogHelper
+INFO: HHH000204: Processing PersistenceUnitInfo [name: %s]
+Jun 07, 2021 11:28:51 AM org.hibernate.Version
+INFO: HHH000412: Hibernate ORM core version %s
+Jun 07, 2021 11:28:51 AM org.hibernate.annotations.common.Version
+INFO: HCANN000001: Hibernate Commons Annotations {%1$s}
+Jun 07, 2021 11:28:51 AM org.hibernate.dialect.Dialect
+INFO: HHH000400: Using dialect: %s
+Jun 07, 2021 11:28:51 AM io.quarkus.runtime.ApplicationLifecycleManager run
+ERROR: Failed to start application (with profile dev)
+javax.enterprise.inject.CreationException: Config root [io.quarkiverse.googlecloudservices.common.GcpConfiguration] with config phase [RUN_TIME] not initialized yet.
+	at io.quarkiverse.googlecloudservices.common.GcpConfiguration_f5f0cfc0930d359f64931c3293f018103e1bfca6_Synthetic_Bean.create(GcpConfiguration_f5f0cfc0930d359f64931c3293f018103e1bfca6_Synthetic_Bean.zig:112)
+	at io.quarkiverse.googlecloudservices.common.GcpConfiguration_f5f0cfc0930d359f64931c3293f018103e1bfca6_Synthetic_Bean.get(GcpConfiguration_f5f0cfc0930d359f64931c3293f018103e1bfca6_Synthetic_Bean.zig:146)
+	at io.quarkiverse.googlecloudservices.common.GcpConfiguration_f5f0cfc0930d359f64931c3293f018103e1bfca6_Synthetic_Bean.get(GcpConfiguration_f5f0cfc0930d359f64931c3293f018103e1bfca6_Synthetic_Bean.zig:169)
+	at io.quarkus.arc.impl.CurrentInjectionPointProvider.get(CurrentInjectionPointProvider.java:52)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_Bean.create(SecretManagerProducer_Bean.zig:244)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_Bean.create(SecretManagerProducer_Bean.zig:327)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+	at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+	at io.quarkus.arc.impl.ClientProxies.getApplicationScopedDelegate(ClientProxies.java:17)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_ClientProxy.arc$delegate(SecretManagerProducer_ClientProxy.zig:67)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_ClientProxy.arc_contextualInstance(SecretManagerProducer_ClientProxy.zig:82)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.create(SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.zig:186)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.create(SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.zig:204)
+	at io.quarkus.arc.impl.AbstractSharedContext.createInstanceHandle(AbstractSharedContext.java:96)
+	at io.quarkus.arc.impl.AbstractSharedContext.access$000(AbstractSharedContext.java:14)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:29)
+	at io.quarkus.arc.impl.AbstractSharedContext$1.get(AbstractSharedContext.java:26)
+	at io.quarkus.arc.impl.LazyValue.get(LazyValue.java:26)
+	at io.quarkus.arc.impl.ComputingCache.computeIfAbsent(ComputingCache.java:69)
+	at io.quarkus.arc.impl.AbstractSharedContext.get(AbstractSharedContext.java:26)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.get(SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.zig:236)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.get(SecretManagerProducer_ProducerMethod_secretManagerClient_da0d037e46ea741b638dc55997e8c2b5dd43f779_Bean.zig:252)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:430)
+	at io.quarkus.arc.impl.ArcContainerImpl.beanInstanceHandle(ArcContainerImpl.java:443)
+	at io.quarkus.arc.impl.ArcContainerImpl.instanceHandle(ArcContainerImpl.java:413)
+	at io.quarkus.arc.impl.ArcContainerImpl.instance(ArcContainerImpl.java:222)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.config.SecretManagerClientProvider.get(SecretManagerClientProvider.java:18)
+	at io.quarkiverse.googlecloudservices.secretmanager.runtime.config.SecretManagerConfigSource.getValue(SecretManagerConfigSource.java:40)
+	at io.smallrye.config.ConfigValueConfigSourceWrapper.getConfigValue(ConfigValueConfigSourceWrapper.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:26)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:27)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:27)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:27)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:27)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:27)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptor.getValue(SmallRyeConfigSourceInterceptor.java:27)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SecretKeysConfigSourceInterceptor.getValue(SecretKeysConfigSourceInterceptor.java:22)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.RelocateConfigSourceInterceptor.getValue(RelocateConfigSourceInterceptor.java:26)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.ProfileConfigSourceInterceptor.getValue(ProfileConfigSourceInterceptor.java:70)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.ExpressionConfigSourceInterceptor.getValue(ExpressionConfigSourceInterceptor.java:26)
+	at io.smallrye.config.ExpressionConfigSourceInterceptor.lambda$getValue$0(ExpressionConfigSourceInterceptor.java:38)
+	at io.smallrye.common.expression.ExpressionNode.emit(ExpressionNode.java:22)
+	at io.smallrye.common.expression.Expression.evaluateException(Expression.java:56)
+	at io.smallrye.common.expression.Expression.evaluate(Expression.java:70)
+	at io.smallrye.config.ExpressionConfigSourceInterceptor.getValue(ExpressionConfigSourceInterceptor.java:37)
+	at io.smallrye.config.ExpressionConfigSourceInterceptor.getValue(ExpressionConfigSourceInterceptor.java:18)
+	at io.smallrye.config.SmallRyeConfigSourceInterceptorContext.proceed(SmallRyeConfigSourceInterceptorContext.java:20)
+	at io.smallrye.config.SmallRyeConfig.getConfigValue(SmallRyeConfig.java:285)
+	at io.smallrye.config.SmallRyeConfig.getValue(SmallRyeConfig.java:227)
+	at io.quarkus.runtime.generated.Config.initGroup$io$quarkus$datasource$runtime$DataSourceRuntimeConfig(Config.zig:23404)
+	at io.quarkus.runtime.generated.Config.initGroup$io$quarkus$datasource$runtime$DataSourcesRuntimeConfig(Config.zig:2093)
+	at io.quarkus.runtime.generated.Config.readConfig(Config.zig:2013)
+	at io.quarkus.deployment.steps.RuntimeConfigSetup.deploy(RuntimeConfigSetup.zig:60)
+	at io.quarkus.runner.ApplicationImpl.doStart(ApplicationImpl.zig:563)
+	at io.quarkus.runtime.Application.start(Application.java:90)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:100)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:66)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:42)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:119)
+	at io.quarkus.runner.GeneratedMain.main(GeneratedMain.zig:29)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at io.quarkus.runner.bootstrap.StartupActionImpl$3.run(StartupActionImpl.java:134)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+
+Jun 07, 2021 11:28:51 AM io.quarkus.deployment.dev.IsolatedDevModeMain firstStart
+INFO: Attempting to start hot replacement endpoint to recover from previous Quarkus startup failure
+Quarkus application exited with code 1
+Press Enter to restart or Ctrl + C to quit
+Jun 07, 2021 11:28:51 AM io.quarkus.deployment.dev.IsolatedDevModeMain firstStart
+ERROR: Failed to recover after failed start
+java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: SRCFG00013: No Converter registered for interface java.nio.file.Path
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder.startServerAfterFailedStart(VertxHttpRecorder.java:225)
+	at io.quarkus.vertx.http.runtime.devmode.VertxHttpHotReplacementSetup.handleFailedInitialStart(VertxHttpHotReplacementSetup.java:39)
+	at io.quarkus.deployment.dev.RuntimeUpdatesProcessor.startupFailed(RuntimeUpdatesProcessor.java:653)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.firstStart(IsolatedDevModeMain.java:137)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:378)
+	at io.quarkus.deployment.dev.IsolatedDevModeMain.accept(IsolatedDevModeMain.java:56)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInCl(CuratedApplication.java:127)
+	at io.quarkus.bootstrap.app.CuratedApplication.runInAugmentClassLoader(CuratedApplication.java:84)
+	at io.quarkus.deployment.dev.DevModeMain.start(DevModeMain.java:144)
+	at io.quarkus.deployment.dev.DevModeMain.main(DevModeMain.java:63)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: SRCFG00013: No Converter registered for interface java.nio.file.Path
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:106)
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:57)
+	at io.quarkus.vertx.http.runtime.VertxHttpRecorder.startServerAfterFailedStart(VertxHttpRecorder.java:197)
+	... 9 more
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: java.lang.IllegalArgumentException: SRCFG00013: No Converter registered for interface java.nio.file.Path
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:106)
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:79)
+	... 11 more
+Caused by: java.lang.RuntimeException: java.lang.IllegalArgumentException: SRCFG00013: No Converter registered for interface java.nio.file.Path
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:106)
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:79)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: SRCFG00013: No Converter registered for interface java.nio.file.Path
+	at io.smallrye.config.SmallRyeConfig.lambda$getConverter$2(SmallRyeConfig.java:415)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1705)
+	at io.smallrye.config.SmallRyeConfig.getConverter(SmallRyeConfig.java:412)
+	at io.quarkus.runtime.configuration.ConfigInstantiator.getConverterFor(ConfigInstantiator.java:121)
+	at io.quarkus.runtime.configuration.ConfigInstantiator.getConverterFor(ConfigInstantiator.java:117)
+	at io.quarkus.runtime.configuration.ConfigInstantiator.handleObject(ConfigInstantiator.java:91)
+	... 13 more
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.109 s
+[INFO] Finished at: 2021-06-07T11:28:52+03:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal io.quarkus:quarkus-maven-plugin:1.13.6.Final:dev (default-cli) on project code-with-quarkus: Failed to run: Dev mode process did not complete successfully -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
